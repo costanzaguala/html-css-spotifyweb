@@ -36,7 +36,7 @@ footer {
 /* MAIN */
 
 .left-nav {
-    width: 20%;
+    width: 15%;
     background-color: var(--nav-bg-color);
 }
 
@@ -59,6 +59,82 @@ footer {
 .round-image img {
     border-radius: 50%;
 }
+
+/* LEFT NAV */
+
+.left-nav {
+    padding: 15px;
+}
+
+.left-nav .logo-spotify {
+    padding-bottom: 25px;
+}
+
+.logo-spotify img {
+    width: 120px;
+}
+
+.logo-spotify-small img {
+    width: 37px;
+}
+
+.left-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-nav h5 {
+    padding-top: 20px;
+}
+
+.left-nav-items * {
+    padding: 5px 0;
+}
+
+.left-nav-items i {
+    padding-right: 8px;
+    color: var(--text-color-grey);
+}
+
+.left-nav-items a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--text-color-grey);
+}
+
+.create-playlist i {
+    vertical-align: middle;
+}
+
+.left-nav {
+    overflow-y: auto;
+} 
+
+.left-nav-bottom-section * {
+    padding: 5px 0;
+
+}
+
+.left-nav-bottom-section i {
+    vertical-align: middle;
+    padding-right: 8px;
+    color: var(--text-color-grey);
+}
+
+.left-nav-bottom-section a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--text-color-grey);
+}
+
+.user-section {
+    border-top: 1px solid var(--text-color-grey);
+}
+
+
+/* LEFT NAV */
+
 
 /* NAV */
 
@@ -102,7 +178,7 @@ nav a {
 
 }
 
-.music-section-card h6 {
+.music-section h6 {
     color: var(--text-color-grey);
 }
 
@@ -204,11 +280,15 @@ footer img {
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 110px) {
+@media screen and (max-width: 1800px) {
 
-    footer i {
-        padding: 0 5px
-    }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+
 
 }
 
@@ -218,11 +298,27 @@ footer img {
         padding: 0 5px
     }
 
-
 }
 
 @media screen and (max-width: 660px) {
-
-
     
+    .logo-spotify img {
+        display: none;
+    }
+
+    .left-nav a,h5 {
+        display: none;
+    }
+
 }
+
+@media screen and (min-width: 660px) {
+    
+    .logo-spotify-small img {
+        display: none;
+    }
+
+}
+
+
+
